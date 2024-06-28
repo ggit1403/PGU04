@@ -1140,15 +1140,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615937553}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.216, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.42261827, w: 0.9063079}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1841871563}
   m_Father: {fileID: 959285928}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 50}
 --- !u!61 &615937555
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2084,8 +2084,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841871562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 2.033, z: 0}
-  m_LocalScale: {x: 0.18159707, y: 1.563988, z: 1}
+  m_LocalPosition: {x: 0, y: 1.3846, z: 0}
+  m_LocalScale: {x: 0.27219346, y: 2.2358367, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 615937554}
@@ -2131,7 +2131,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.15999654, b: 0, a: 1}
   m_FlipX: 0
@@ -2457,6 +2457,7 @@ GameObject:
   - component: {fileID: 1965170617}
   - component: {fileID: 1965170619}
   - component: {fileID: 1965170618}
+  - component: {fileID: 1965170620}
   m_Layer: 0
   m_Name: PlayerLogic
   m_TagString: Player
@@ -2561,6 +2562,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1965170620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965170615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41dfa8a56d4003845b81e1a6fd09d7d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack_Speed: 0
+  waiting_time: 0
+  anim: {fileID: 959285929}
 --- !u!1 &1990612924
 GameObject:
   m_ObjectHideFlags: 0

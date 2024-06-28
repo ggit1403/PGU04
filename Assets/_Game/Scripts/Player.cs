@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private GameObject sword;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,16 +51,26 @@ public class Player : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
 
-        Attack();
+        
+
 
     }
-
-    public void Attack()
+    
+    /*private void Attack()
     {
-        if(Input.GetKeyDown(KeyCode.E)) {
-            Debug.Log("attack");
-            anim.SetBool("attack", true);
-            sword.SetActive(true);
+        if (attack_Speed <= 0f)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                anim.SetTrigger("Attack");
+                attack_Speed = waiting_time;
+                Debug.Log("attack");
+            }
+
         }
-    }
+        else
+        {
+            attack_Speed -= Time.deltaTime;
+        }
+    }*/
 }
